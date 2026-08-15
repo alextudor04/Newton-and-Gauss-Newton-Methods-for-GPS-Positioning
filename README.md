@@ -25,9 +25,9 @@ The key finding: Newton's method achieves quadratic convergence to an exact solu
 
 ```
 .
-├── data/           # Satellite pseudorange and position data
-├── code/           # Python implementations of Newton and Gauss-Newton solvers
-├── writeup/        # Full technical writeup (PDF)
+├── 1_Data/           # Satellite pseudorange and position data
+├── 2_Code/           # Python implementations of Newton and Gauss-Newton solvers
+├── 3_Report/         # Full technical writeup (PDF)
 └── README.md
 ```
 
@@ -38,7 +38,7 @@ Both solvers linearize the nonlinear pseudorange equations at each iteration and
 - **Newton's Method** solves the square (4-equation, 4-unknown) system directly, using the full Jacobian inverse at each step.
 - **Gauss-Newton** solves the overdetermined (10-equation, 4-unknown) system by minimizing the sum of squared residuals, using the pseudoinverse of the Jacobian at each step.
 
-See the full writeup in `/writeup` the linearization of the pseudorange equations and the least-squares formulation.
+See the full writeup in `/3_Report` the linearization of the pseudorange equations and the least-squares formulation.
 
 ## Data
 
