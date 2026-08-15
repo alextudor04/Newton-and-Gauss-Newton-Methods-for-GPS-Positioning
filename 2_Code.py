@@ -96,7 +96,7 @@ def solve_gauss_newton(satellites, pseudoranges, initial_guess):
 
 if __name__ == '__main__':
     import pandas as pd
-    df = pd.read_csv('Dataset.csv')
+    df = pd.read_csv('1_Data.csv')
     satellites = df[['SvPositionXEcefMeters',
                      'SvPositionYEcefMeters',
                      'SvPositionZEcefMeters']].to_numpy()
